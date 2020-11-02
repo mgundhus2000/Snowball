@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+       body {
+         background-image: url(Plant_background1.jpg);
+         background-position: center center;
+         background-size: cover;
+         height: 130vh;
+         margin: 0;
+         padding: 0;
+        }
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.name {
+  float: left;
+  color: #02db2e;
+  margin-left: 20px;
+  padding: 10px;
+  border-style: solid;
+}
+
+li {
+  float: right;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+li a {
+  display: block;
+  color: #27db45;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+    #main-content {
+        background-color: rgb(82, 60, 60);
+        background: #ffffff;
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 600px;
+        padding: 20px;
+        text-align: justify;
+        font-size: 4mm;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+    }
+    .info {
+      width: 700px;
+      padding-left: 50px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+    }
+.bottom {
+background-color: #2a2a2a;
+display: flex;
+padding: 0;
+margin: 0;
+color: white;
+width: 100%;
+box-sizing: border-box;
+flex-direction: row;
+}
+.box_right1 {
+  flex: 1;
+  border-left: solid;
+  padding-right: 20px;
+  text-align: right;
+}
+.box_right1 p {
+  width: 300px;
+  float: right;
+}
+.box_middle {
+  flex: 1;
+  text-align: center;
+}
+.box_left1{
+  flex: 1;
+  border-right: solid;
+  margin-left: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h3 {
+  font-size: 20px;
+  padding-left: 20px;
+  text-decoration: underline;
+}
+.fa {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #02db2e;
+}
+
+.fa-twitter {
+  color: #02db2e;
+}
+
+.fa-instagram {
+  color: #02db2e;
+}
+.kontakt_oss {
+  display: block;
+}
+.kontakt_oss2 {
+  display: none;
+  background-color: none;
+}
+.kontakt_oss2 a {
+  margin-left: 30px;
+}
+
+/* Responsiv css */
+@media screen and (max-width:2560px) and (min-width: 1441px) {
+body {
+  height: 100vh;
+}
+li {
+  margin-top: 30px;
+}
+li a {
+  font-size: 38px;
+}
+  #main-content {
+      width: 1200px;
+      height: 1200px;
+  }
+  .info {
+    width: 1100px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 35px;
+  }
+  .bottom {
+    height: 475px;
+  }
+  .box_middle h3 {
+    text-align: center;
+  }
+  .kontakt_oss {
+    display: none;
+  }
+  .kontakt_oss2 {
+    display: block;
+  }
+  .fa {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width:1440px) and (min-width: 1280px) {
+  body {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    height: 180vh;
+  }
+  #main-content {
+    width: 500px;
+  }
+  .info {
+    width: 400px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .box_right1 p {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 560px) {
+body {
+  height: 300vh;
+}
+#main-content {
+  width: 350px;
+  height: 820px;
+}
+.info {
+  width: 250px;
+}
+li a {
+  font-size: 15px;
+}
+.name {
+  font-size: 18px;
+}
+  .bottom {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .box_left1 {
+    text-align: center;
+    padding-right: 50px;
+  }
+  .box_left1 p {
+    padding-left: 15px;
+  }
+  .box_middle {
+    padding-right: 30px;
+  }
+  .box_right1{
+    text-align: center;
+  }
+  .box_right1 p{
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 424px) {
+  #main-content {
+    width: 250px;
+    height: 1020px;
+    text-align: center;
+  }
+  .info {
+    width: 200px;
+    padding-left: 30px;
+  }
+  li a {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .name {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
+</style>
+<body>
+    <div>
+      <ul>
+        <h2 class="name">OF NATURE</h2>
+  <li><a href="SnowAbout.html">About us</a></li>
+  <li><a href="SnowWeDo.html">Contact</a></li>
+  <li><a href="Snowball_main.html">Home</a></li>
+</ul>
+        <div id="main-content">
+          <h1> About Us</h1>
+         <h2 class="info">Norwegian old field organization</h2>
+         <p class="info">The Norwegian old field association was established in 1990 and is Norway’s
+             youngest nature and environmental protection organization mainly aimed on
+             restoration forgotten fields. Many local teams include several municipalities.
+              And local teams work with nature especially in consideration of restoring fields
+              and other related issues in their areas.<br>
+              Norway’s old fields organization will go after active, effective and ongoing their
+              old field protection against uncertain politicians and established sources to restoring
+              old fields additionally upon to pollutions. They want to be a professional trained in
+              restoring old fields and advises in its protection.
+            </p>
+
+            <h2 class="info">International commitment </h2>
+            <p class="info">
+                Norway’s old field conservation is involved in several international networks.
+                They represent Norway in the world particularly in restoring fields. They also
+                collaborate international with related issues.<br>
+                Norway’s old field collaborates with many European countries who have interest
+                restoring old field to cereal fruitful. Their philosophy is that the best way to
+                develop solutions is to collaborate with experienced actors who can implement these solutions.
+                its our result that giving us access to international partnership.
+            </p>
+        </div>
+    </div>
+    <footer class="bottom">
+
+      <div class="box_left1">
+        <h3>Overview</h3>
+        <p><a href="Snowball_main.html">Home</a></p>
+        <p><a href="SnowWeDo.html">What we do</a></p>
+        <p><a href="SnowAbout.html">About us</a></p>
+        <br>
+        <p>© 2020 OFnature</p>
+      </div>
+
+      <div class="box_middle">
+        <h3>Follow us on: </h3>
+          <br>
+        <div class="kontakt_oss">
+           <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+          </div>
+          </h3>
+            <div class="kontakt_oss2">
+                <a href="#" class="fa fa-facebook fa-4x"></a>
+                <a href="#" class="fa fa-twitter fa-4x"></a>
+                <a href="#" class="fa fa-instagram fa-4x"></a>
+            </div>
+        </div>
+
+     <div class="box_right1">
+       <h3>Contact us</h3>
+                <form action="fake@gmail.com" method="post">
+                    <input type="email" class="text-input contact-input" placeholder="your email address..."><br>
+                    <textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br>
+                    <button type="submit" class="btn btn-big">
+                        send
+                    </button>
+                </form>
+                <br>
+                <p>or call oss on 123 45 678 any day from: 08:00 to 15:00</p>
+     </div>
+    </footer>
+</body>
+</html>
