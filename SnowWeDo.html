@@ -1,374 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
 </head>
 <style>
-     body {
-       background-image: url(Plant_background1.jpg);
-       background-position: center center;
-       background-size: cover;
-       height: 130vh;
-       margin: 0;
-       padding: 0;
-        }
-        ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+  body {
+    background-image: url(Plant_background1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 130vh;
+    margin: 0;
+    padding: 0;
+  }
 
-.name {
-  float: left;
-  color: #02db2e;
-  margin-left: 20px;
-  padding: 10px;
-  border-style: solid;
-}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
 
-li {
-  float: right;
-  margin-right: 10px;
-  margin-top: 25px;
-}
+  .name {
+    float: left;
+    color: #02db2e;
+    margin-left: 20px;
+    padding: 10px;
+    border-style: solid;
+  }
 
-li a {
-  display: block;
-  color: #27db45;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 20px;
-  text-decoration: none;
-}
+  li {
+    float: right;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
 
-li a:hover {
-  background-color: #111;
-}
-    #main-content {
-      background-color: rgb(82, 60, 60);
-      background: #ffffff;
-      width: 800px;
-      margin: 0 auto;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      height: 800px;
-      padding: 20px;
-      text-align: justify;
-      font-size: 4mm;
-      font-style: italic;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    h1 {
-      text-align: center;
-      font-size: 35px;
-    }
-    .info {
-      width: 700px;
-      padding-left: 50px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 18px;
-    }
-.main-content p {
+  li a {
+    display: block;
+    color: #27db45;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
+
+  #main-content {
+    background-color: rgb(82, 60, 60);
+    background: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 800px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 4mm;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .info {
+    width: 700px;
+    padding-left: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .main-content p {
     text-align: left;
     position: static;
     padding-left: 100px;
     padding-right: 200px;
-}
-.bottom {
-background-color: #2a2a2a;
-display: flex;
-padding: 0;
-margin: 0;
-color: white;
-width: 100%;
-box-sizing: border-box;
-flex-direction: row;
-}
-.box_right1 {
-  flex: 1;
-  border-left: solid;
-  padding-right: 20px;
-  text-align: right;
-}
-.box_right1 p {
-  width: 300px;
-  float: right;
-}
-.box_middle {
-  flex: 1;
-  text-align: center;
-}
-.box_left1{
-  flex: 1;
-  border-right: solid;
-  margin-left: 20px;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-h3 {
-  font-size: 20px;
-  padding-left: 20px;
-  text-decoration: underline;
-}
-.fa {
-  padding-left: 20px;
-  text-decoration: none;
-}
+  }
 
-.fa-facebook {
-  color: #02db2e;
-}
-
-.fa-twitter {
-  color: #02db2e;
-}
-
-.fa-instagram {
-  color: #02db2e;
-}
-.kontakt_oss {
-  display: block;
-}
-.kontakt_oss2 {
-  display: none;
-  background-color: none;
-}
-.kontakt_oss2 a {
-  margin-left: 30px;
-}
-
-/* Responsiv css */
-@media screen and (max-width:2560px) and (min-width: 1441px) {
-body {
-  height: 130vh;
-}
-li {
-  margin-top: 30px;
-}
-li a {
-  font-size: 38px;
-}
-  #main-content {
-      width: 1200px;
-      height: 1600px;
-  }
-  .info {
-    width: 1100px;
-  }
-  h1 {
-    font-size: 55px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-  h3 {
-    font-size: 35px;
-  }
-  p {
-    font-size: 35px;
-  }
   .bottom {
-    height: 475px;
+    background-color: #2a2a2a;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
   }
-  .box_middle h3 {
+
+  .box_right1 {
+    flex: 1;
+    border-left: solid;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .box_right1 p {
+    width: 300px;
+    float: right;
+  }
+
+  .box_middle {
+    flex: 1;
     text-align: center;
   }
-  .kontakt_oss {
-    display: none;
+
+  .box_left1 {
+    flex: 1;
+    border-right: solid;
+    margin-left: 20px;
   }
-  .kontakt_oss2 {
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+  }
+
+  .fa {
+    padding-left: 20px;
+    text-decoration: none;
+  }
+
+  .fa-facebook {
+    color: #02db2e;
+  }
+
+  .fa-twitter {
+    color: #02db2e;
+  }
+
+  .fa-instagram {
+    color: #02db2e;
+  }
+
+  .kontakt_oss {
     display: block;
   }
-  .fa {
-    padding-right: 50px;
+
+  .kontakt_oss2 {
+    display: none;
+    background-color: none;
   }
-}
-@media screen and (max-width:1440px) and (min-width: 1280px) {
-  body {
-    height: 130vh;
+
+  .kontakt_oss2 a {
+    margin-left: 30px;
   }
-}
-@media screen and (max-width: 850px) {
-  body {
-    height: 190vh;
+
+  /* Responsiv css */
+  @media screen and (max-width:2560px) and (min-width: 1441px) {
+    body {
+      height: 130vh;
+    }
+
+    li {
+      margin-top: 30px;
+    }
+
+    li a {
+      font-size: 38px;
+    }
+
+    #main-content {
+      width: 1200px;
+      height: 1600px;
+    }
+
+    .info {
+      width: 1100px;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 35px;
+    }
+
+    .bottom {
+      height: 475px;
+    }
+
+    .box_middle h3 {
+      text-align: center;
+    }
+
+    .kontakt_oss {
+      display: none;
+    }
+
+    .kontakt_oss2 {
+      display: block;
+    }
+
+    .fa {
+      padding-right: 50px;
+    }
   }
-  #main-content {
-    width: 500px;
+
+  @media screen and (max-width:1440px) and (min-width: 1280px) {
+    body {
+      height: 130vh;
+    }
   }
-  .info {
-    width: 400px;
+
+  @media screen and (max-width: 850px) {
+    body {
+      height: 190vh;
+    }
+
+    #main-content {
+      width: 500px;
+    }
+
+    .info {
+      width: 400px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    .box_right1 p {
+      width: 100px;
+    }
   }
-  h1 {
-    font-size: 25px;
+
+  @media screen and (max-width: 560px) {
+    body {
+      height: 300vh;
+    }
+
+    #main-content {
+      width: 350px;
+      height: 1000px;
+    }
+
+    .info {
+      width: 300px;
+      padding-left: 30px;
+    }
+
+    li a {
+      font-size: 15px;
+    }
+
+    .name {
+      font-size: 18px;
+    }
+
+    .bottom {
+      flex-direction: column;
+      padding-bottom: 10px;
+    }
+
+    .box_left1 {
+      text-align: center;
+      padding-right: 50px;
+    }
+
+    .box_left1 p {
+      padding-left: 15px;
+    }
+
+    .box_middle {
+      padding-right: 30px;
+    }
+
+    .box_right1 {
+      text-align: center;
+    }
+
+    .box_right1 p {
+      float: none;
+      margin: 0 auto;
+    }
   }
-  h2 {
-    font-size: 20px;
+
+  @media screen and (max-width: 424px) {
+    #main-content {
+      width: 250px;
+      height: 1420px;
+      text-align: center;
+    }
+
+    .info {
+      width: 200px;
+      padding-left: 30px;
+    }
+
+    li a {
+      font-size: 10px;
+      padding: 0px;
+      12px;
+      padding-top: 8px;
+    }
+
+    .name {
+      font-size: 10px;
+      margin-top: 20px;
+    }
   }
-  p {
-    font-size: 15px;
-  }
-  .box_right1 p {
-    width: 100px;
-  }
-}
-@media screen and (max-width: 560px) {
-body {
-  height: 300vh;
-}
-#main-content {
-  width: 350px;
-  height: 1000px;
-}
-.info {
-  width: 300px;
-  padding-left: 30px;
-}
-li a {
-  font-size: 15px;
-}
-.name {
-  font-size: 18px;
-}
-  .bottom {
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-  .box_left1 {
-    text-align: center;
-    padding-right: 50px;
-  }
-  .box_left1 p {
-    padding-left: 15px;
-  }
-  .box_middle {
-    padding-right: 30px;
-  }
-  .box_right1{
-    text-align: center;
-  }
-  .box_right1 p{
-    float: none;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 424px) {
-  #main-content {
-    width: 250px;
-    height: 1420px;
-    text-align: center;
-  }
-  .info {
-    width: 200px;
-    padding-left: 30px;
-  }
-  li a {
-    font-size: 10px;
-    padding-top: 8px;
-  }
-  .name {
-    font-size: 10px;
-    margin-top: 20px;
-  }
-}
 </style>
+
 <body>
+  <div>
     <div>
-        <div>
-          <ul>
-            <h2 class="name">OF NATURE</h2>
-      <li><a href="SnowAbout.html">About us</a></li>
-      <li><a href="SnowWeDo.html">Contact</a></li>
-      <li><a href="Snowball_main.html">Home</a></li>
-    </ul>
-            <div id="main-content">
-              <h1> What We Do</h1>
-                <h2 class="info">A field forgotten - How to restore old fields</h2>
-                <p class="info">
-                    There are many reasons that an older field might have been abandoned.
-                     Perhaps a farm property was sold and used for a nonfarming purposes
-                     such as hunting. Or perhaps the original family was no longer able or
-                     willing to farm the land, and the fields were left dormant for a decade or more.
-                     Whatever the reason, a period of five to 15 years is plenty of time for the tree, weeds and
-                     rocks to take hold of the land. That makes it unsuitable for farming.<br>
-                     The severity of the unwanted growth depends on how long the fields has been
-                     neglected and how aggressive the invading flora is. For this article, we will
-                      assume that the fields are overgrown and unsuitable for cereal equipment or
-                      production but still recognizable as a field – not a forest.
-                </p>
-                <h2 class="info">Rocks and Fallen Trees </h2>
-                <p class="info">
-                    It’s not uncommon for old, unworked fields to fall into disrepair, but it’s
-                    possible to restore an old field following some basic steps. <br>
-                    It’s a common occurrence when folks buy rural property. They discover
-                    acres of acres of older field that have been let go for years. Now the
-                    fields are full of weeds and small trees with the rest of the forest
-                    encroaching on the edges.<br>
-                    Frost action tends to continually raise small rocks to the surface.
-                    And we will need to clear our field of these troublesome objects.
-                    Coz the rock can case a great deal of damage to machinery. And also
-                    if there are any large trees surrounding that branches that might
-                    have fallen into the way and are buried under tall weeds.
-                </p>
-                <h2 class="info">Our role or aim</h2>
-                <p class="info">
-                    We have been working for decades regarding matters on behalf of government
-                    to come over those obstacles. We practically investigate some old fields and
-                    trying theme recovering to individuals. And we are working close with farmers
-                    and support theme for some demands.
-                    <a href="http://www.umb.no/statisk/ior/kapital_15_mai.pdf">Bonden får</a>
-                </p>
-            </div>
-        </div>
-        <footer class="bottom">
-          <div class="box_left1">
-            <h3>Overview</h3>
-            <p><a href="Snowball_main.html">Home</a></p>
-            <p><a href="SnowWeDo.html">What we do</a></p>
-            <p><a href="SnowAbout.html">About us</a></p>
-            <br>
-            <p>© 2020 OFnature</p>
-          </div>
-
-          <div class="box_middle">
-            <h3>Follow us on: </h3>
-              <br>
-            <div class="kontakt_oss">
-               <a href="#" class="fa fa-facebook"></a>
-                      <a href="#" class="fa fa-twitter"></a>
-                      <a href="#" class="fa fa-instagram"></a>
-              </div>
-              </h3>
-                <div class="kontakt_oss2">
-                    <a href="#" class="fa fa-facebook fa-4x"></a>
-                    <a href="#" class="fa fa-twitter fa-4x"></a>
-                    <a href="#" class="fa fa-instagram fa-4x"></a>
-                </div>
-            </div>
-
-          <div class="box_right1">
-            <h3>Contact us</h3>
-                     <form action="fake@gmail.com" method="post">
-                         <input type="email" class="text-input contact-input" placeholder="your email address..."><br>
-                         <textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br>
-                         <button type="submit" class="btn btn-big">
-                             send
-                         </button>
-                     </form>
-                     <br>
-                     <p>or call oss on 123 45 678 any day from: 08:00 to 15:00</p>
-          </div>
-        </footer>
+      <ul>
+        <h2 class="name">OF NATURE</h2>
+        <li><a href="SnowAbout.html">About us</a></li>
+        <li><a href="SnowWeDo.html">What we do</a></li>
+        <li><a href="Snowball_main.html">Home</a></li>
+      </ul>
+      <div id="main-content">
+        <h1> What We Do</h1>
+        <h2 class="info">A field forgotten - How to restore old fields</h2>
+        <p class="info">
+          There are many reasons that an older field might have been abandoned.
+          Perhaps a farm property was sold and used for a nonfarming purposes
+          such as hunting. Or perhaps the original family was no longer able or
+          willing to farm the land, and the fields were left dormant for a decade or more.
+          Whatever the reason, a period of five to 15 years is plenty of time for the tree, weeds and
+          rocks to take hold of the land. That makes it unsuitable for farming.<br>
+          The severity of the unwanted growth depends on how long the fields has been
+          neglected and how aggressive the invading flora is. For this article, we will
+          assume that the fields are overgrown and unsuitable for cereal equipment or
+          production but still recognizable as a field – not a forest.
+        </p>
+        <h2 class="info">Rocks and Fallen Trees </h2>
+        <p class="info">
+          It’s not uncommon for old, unworked fields to fall into disrepair, but it’s
+          possible to restore an old field following some basic steps. <br>
+          It’s a common occurrence when folks buy rural property. They discover
+          acres of acres of older field that have been let go for years. Now the
+          fields are full of weeds and small trees with the rest of the forest
+          encroaching on the edges.<br>
+          Frost action tends to continually raise small rocks to the surface.
+          And we will need to clear our field of these troublesome objects.
+          Coz the rock can case a great deal of damage to machinery. And also
+          if there are any large trees surrounding that branches that might
+          have fallen into the way and are buried under tall weeds.
+        </p>
+        <h2 class="info">Our role or aim</h2>
+        <p class="info">
+          We have been working for decades regarding matters on behalf of government
+          to come over those obstacles. We practically investigate some old fields and
+          trying theme recovering to individuals. And we are working close with farmers
+          and support theme for some demands.
+          <a href="http://www.umb.no/statisk/ior/kapital_15_mai.pdf">Bonden får</a>
+        </p>
+      </div>
     </div>
+    <footer class="bottom">
+      <div class="box_left1">
+        <h3>Overview</h3>
+        <p><a href="Snowball_main.html">Home</a></p>
+        <p><a href="SnowWeDo.html">What we do</a></p>
+        <p><a href="SnowAbout.html">About us</a></p>
+        <br>
+        <p>© 2020 OFnature</p>
+      </div>
+
+      <div class="box_middle">
+        <h3>Follow us on: </h3>
+        <br>
+        <div class="kontakt_oss">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        </h3>
+        <div class="kontakt_oss2">
+          <a href="#" class="fa fa-facebook fa-4x"></a>
+          <a href="#" class="fa fa-twitter fa-4x"></a>
+          <a href="#" class="fa fa-instagram fa-4x"></a>
+        </div>
+      </div>
+
+      <div class="box_right1">
+        <h3>Contact us</h3>
+        <form action="fake@gmail.com" method="post">
+          <input type="email" class="text-input contact-input" placeholder="your email address..."><br>
+          <textarea name="message" class="text-input contact-input" placeholder="your message..."></textarea><br>
+          <button type="submit" class="btn btn-big">
+            send
+          </button>
+        </form>
+        <br>
+        <p>or call oss on 123 45 678 any day from: 08:00 to 15:00</p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
